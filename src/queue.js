@@ -17,11 +17,9 @@ class Queue {
   queue = [];
 
   getUnderlyingList() {
-    console.debug(this.queue);
     let revQueue = this.queue.reverse();
     let result = 0;
     for (let i = 0; i < this.queue.length; i++) {
-      console.debug(this.queue[i]);
       if (result != 0) {
         const node = new ListNode(this.queue[i]);
         node.next = result;
